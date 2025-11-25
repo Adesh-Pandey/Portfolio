@@ -12,7 +12,7 @@
 
 ## Professional Summary
 
-Full-time Software Engineer at Synthesis with nearly 3 years of experience building high-performance web applications and mobile platforms. Specialized in React, TypeScript, Next.js, and full-stack development. Currently pursuing Bachelor's in Electronics Engineering at Pulchowk Engineering Campus while maintaining full-time employment. Proven track record of delivering impactful features including authentication system migrations, iOS applications, and complex interactive learning components.
+Software Engineer who improved authentication latency by 10x and built an iOS app adopted by 60% of users. 3 years of experience specializing in React, TypeScript, Next.js, and Swift. Currently pursuing Bachelor's in Electronics Communication and Information Engineering while maintaining full-time employment at Synthesis, delivering high-impact features across web and mobile platforms.
 
 ---
 
@@ -21,35 +21,41 @@ Full-time Software Engineer at Synthesis with nearly 3 years of experience build
 ### Software Engineer - Full-time
 **Synthesis** | April 2023 - Present | US-based edtech startup
 
-#### Authentication System Migration
-- Migrated authentication from server-side to client-side architecture, improving page load latency by 10x
-- Significantly enhanced user experience across the entire application
-
 #### iOS Application Development
-- Led development of Synthesis iPad app using Swift and WebView architecture
-- Achieved 50-60% user adoption, becoming the preferred platform for majority of users
-- Responsible for ongoing maintenance and feature development
+- Led development of Synthesis iPad app using Swift and WebView architecture, achieving 50-60% user adoption
 - **App Store:** apps.apple.com/np/app/synthesis-math-tutor/id6448335635
 
-#### Interactive Learning Components
-- Developed dozens of complex interactive learning tools and educational games using React, Redux, and HTML within Next.js
-- Performance-focused React-based games with cross-platform compatibility and optimized state management
+#### Authentication System Migration
+- Migrated authentication from server-side to client-side architecture, improving page load latency by 10x
 
-#### Full-Stack Platform Infrastructure
-- Own all Account and Billing systems with Stripe and Apple payment integrations
-- Built complete backend-to-frontend infrastructure for referral and affiliate programs
-- Implemented A/B testing system for purchase modal experiments to optimize conversion
-- Handle Android tablet support for both institutional and consumer user base
+#### Account & Billing Systems
+- Lead all account and billing systems with Stripe and Apple payment integrations. Built referral and affiliate programs. A/B testing infrastructure
 
-#### Initial Freelance Project
-- Delivered 2-week freelance project building real-time interactive application with Framer Motion, React TypeScript, WebSockets, and Express
-- Transitioned to full-time role based on execution quality, delivery speed, and effective communication
+#### Interactive Learning Tools
+- Developed dozens of complex educational games and interactive widgets using React, Redux, and Framer Motion with optimized state management
+
+#### Origin Story
+- Started as a 2-week freelance project. Transitioned to full-time based on execution quality, delivery speed, and effective communication
+
+---
+
+## Technical Skills
+
+**Primary Stack:** Next.js, React, TypeScript, Redux, Tailwind CSS, tRPC, Framer Motion
+
+**Backend & Tools:** Express, Node.js, WebSockets
+
+**Mobile & Payments:** Swift, Stripe, Apple IAP
+
+**Third-Party Integrations:** Statsig, Fullstory, Axiom, Segment
+
+**Deployment:** Vercel
 
 ---
 
 ## Education
 
-### Bachelor's in Electronics Engineering
+### Bachelor's in Electronics Communication and Information Engineering
 **Pulchowk Engineering Campus** | Tribhuvan University, Nepal
 Currently in 3rd Year, 6th Semester
 *Concurrent with full-time software engineering work*
@@ -85,27 +91,3 @@ Interactive visualization of common sorting algorithms including Merge Sort, Qui
 
 **Live:** sortingvisualizer-00.web.app
 
----
-
-## Technical Skills
-
-**Primary Stack:** Next.js, React, TypeScript, Redux, Tailwind CSS, tRPC, Framer Motion
-
-**Backend & Tools:** Express, Node.js, WebSockets
-
-**Mobile & Payments:** Swift, Stripe, Apple IAP
-
-**Third-Party Integrations:** Statsig, Fullstory, Axiom, Segment
-
-**Deployment:** Vercel
-
----
-
-## Key Achievements
-
-- Improved authentication system performance by 10x through architectural migration
-- Built iOS application adopted by 50-60% of active users
-- Developed dozens of production-ready interactive learning components
-- Successfully transitioned from freelance to full-time position within 2 weeks
-- Maintained full-time engineering role while pursuing engineering degree
-- Contributed to major open source projects (Framer Motion, Matrix SDK)
