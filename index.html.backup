@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adesh Pandey - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .dark-mode {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #1e293b;
+        }
+
+        .dark-mode .text-gray-900 {
+            color: #e2e8f0;
+        }
+
+        .dark-mode .text-gray-700 {
+            color: #cbd5e1;
+        }
+
+        .dark-mode .text-gray-600 {
+            color: #94a3b8;
+        }
+
+        .dark-mode .border-gray-200 {
+            border-color: #334155;
+        }
+
+        .dark-mode .bg-gray-50 {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+        }
+
+        .dark-mode .hover\:bg-gray-50:hover {
+            background-color: #334155;
+        }
+
+        .dark-mode .border-2 {
+            border-color: #475569;
+        }
+
+        .dark-mode .bg-gradient-to-r {
+            background: linear-gradient(135deg, #1e3a4c 0%, #2d4a3e 100%);
+            border-color: #3b82f6;
+        }
+
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .dark-mode .project-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .dark-mode #themeToggle {
+            background-color: #334155;
+            border-color: #475569;
+        }
+
+        .dark-mode section {
+            background-color: #0f172a;
+        }
+
+        .dark-mode section.bg-white {
+            background-color: #1e293b;
+        }
+
+        .dark-mode .bg-gradient-to-r.from-green-50 {
+            background: linear-gradient(135deg, #1e3a2e 0%, #2d4a3e 100%) !important;
+            border-color: #10b981 !important;
+        }
+
+        .dark-mode .bg-gradient-to-r.from-indigo-50 {
+            background: linear-gradient(135deg, #1e2a4c 0%, #2d3a5e 100%) !important;
+            border-color: #6366f1 !important;
+        }
+
+        .dark-mode .border-green-600 {
+            border-color: #10b981 !important;
+        }
+
+        .dark-mode .border-indigo-600 {
+            border-color: #6366f1 !important;
+        }
+
+        .dark-mode .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+        }
+
+        .dark-mode .shadow-2xl {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode .rounded-lg,
+        .dark-mode .rounded-xl {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode a.text-indigo-600 {
+            color: #818cf8 !important;
+        }
+
+        .dark-mode a.text-indigo-600:hover {
+            color: #a5b4fc !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 transition-all">
+
+    <!-- Dark Mode Toggle -->
+    <div class="absolute top-6 right-6 z-50">
+        <button id="themeToggle" class="p-3 rounded-full bg-gray-100 shadow-lg hover:shadow-xl transition-all border border-gray-300">
+            <svg id="sunIcon" class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <svg id="moonIcon" class="w-6 h-6 text-indigo-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 py-20">
+        <div class="max-w-6xl w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Text -->
+                <div class="order-2 md:order-1 space-y-6">
+                    <div>
+                        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-2">Adesh Pandey</h1>
+                        <h2 class="text-2xl md:text-3xl font-medium text-gray-600 mb-4">Software Engineer</h2>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Building delightful, high-performance products from Nepal.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4 pt-4">
+                        <a href="#experience" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all font-medium">
+                            View Experience
+                        </a>
+                        <a href="#projects" class="px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition-all font-medium">
+                            See Projects
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side - Photo -->
+                <div class="order-1 md:order-2 flex justify-center md:justify-end">
+                    <div class="w-80 h-96 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl shadow-2xl overflow-hidden">
+                        <img src="profile.jpg" alt="Adesh Pandey" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Experience</h2>
+
+            <div class="space-y-8">
+                <!-- Synthesis Position -->
+                <div class="border-l-4 border-indigo-600 pl-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Software Engineer</h3>
+                    <p class="text-lg text-indigo-600 font-medium mb-1">Synthesis</p>
+                    <p class="text-gray-600 mb-6">3 years | US-based edtech startup</p>
+
+                    <div class="space-y-6">
+                        <!-- Auth System Migration -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Auth System Migration - Major Impact</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Rebuilt the authentication system by migrating from slow server-side auth to fast client-side architecture. This resulted in dramatically faster load times and smoother UX across the app.
+                            </p>
+                        </div>
+
+                        <!-- iPad App -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Built the Synthesis iPad App - Huge Impact</h4>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Led development of the iPad app using Swift and WebView. Became the preferred platform—50-60% of users migrated to it. Maintained and supported long-term.
+                            </p>
+                            <a href="https://apps.apple.com/np/app/synthesis-math-tutor/id6448335635" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+                                View on App Store
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Interactive Widgets -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Built Complex Interactive Widgets in React</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Built dozens of complex interactive learning tools and games using React and native HTML elements. These Next.js client components use React and Redux, despite React not being designed for game-like interactions. Developed deep expertise in managing edge cases, rendering issues, and performance pitfalls.
+                            </p>
+                        </div>
+
+                        <!-- Account & Billing + Platform -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Full-Stack Platform Infrastructure</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Own all Account and Billing systems with Stripe and Apple payment integrations. Built complete backend-to-frontend infrastructure for referral and affiliate programs. Implemented A/B testing system for purchase modal experiments to optimize conversion.
+                            </p>
+                        </div>
+
+                        <!-- Freelance Project That Led to Hire -->
+                        <div class="bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg border-l-4 border-green-600">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">How I Got Hired: The 2-Week Challenge</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Hired after completing a 2-week freelance project using Framer Motion, React (TypeScript), WebSockets, Express, and Digital Ocean—most were new to me. Previously only used React in JS. Rapid learning and delivery led to full-time position.
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="bg-gray-50 p-6 rounded-lg border-2 border-gray-200">
+                            <h4 class="font-semibold text-gray-900 mb-4 text-lg">Technologies & Stack</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600 mb-2">Primary Stack</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-black text-white rounded-full text-sm font-medium">Next.js</span>
+                                        <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-medium">React</span>
+                                        <span class="px-3 py-1 bg-blue-700 text-white rounded-full text-sm font-medium">TypeScript</span>
+                                        <span class="px-3 py-1 bg-purple-600 text-white rounded-full text-sm font-medium">Redux</span>
+                                        <span class="px-3 py-1 bg-cyan-500 text-white rounded-full text-sm font-medium">Tailwind CSS</span>
+                                        <span class="px-3 py-1 bg-indigo-600 text-white rounded-full text-sm font-medium">tRPC</span>
+                                        <span class="px-3 py-1 bg-pink-600 text-white rounded-full text-sm font-medium">Framer Motion</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600 mb-2">Backend & Tools</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-gray-700 text-white rounded-full text-sm font-medium">Express</span>
+                                        <span class="px-3 py-1 bg-green-600 text-white rounded-full text-sm font-medium">Node.js</span>
+                                        <span class="px-3 py-1 bg-yellow-600 text-white rounded-full text-sm font-medium">WebSockets</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600 mb-2">Mobile & Payments</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-orange-600 text-white rounded-full text-sm font-medium">Swift</span>
+                                        <span class="px-3 py-1 bg-purple-700 text-white rounded-full text-sm font-medium">Stripe</span>
+                                        <span class="px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium">Apple IAP</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600 mb-2">Hosting & DevOps</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-blue-500 text-white rounded-full text-sm font-medium whitespace-nowrap">Digital Ocean</span>
+                                        <span class="px-3 py-1 bg-black text-white rounded-full text-sm font-medium whitespace-nowrap">Vercel</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open Source Contributions -->
+                <div class="mt-12 pt-12 border-t border-gray-200">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-8">Open Source Contributions</h3>
+
+                    <div class="space-y-6">
+                        <!-- Framer Motion -->
+                        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg flex items-center">
+                                <span>Framer Motion</span>
+                                <span class="ml-3 px-3 py-1 bg-indigo-600 text-white text-sm rounded-full">Highlighted</span>
+                            </h4>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Discovered and fixed critical missing/broken types after Motion v2 split. Reproduced the issue, implemented a fix, and submitted a PR that was merged and approved by Matt Perry.
+                            </p>
+                            <a href="https://x.com/mattgperry/status/1879103131889623170?s=20" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+                                See Matt Perry's Response
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Matrix SDA -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-3 text-lg">Matrix SDA (React)</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                Contributed styling fixes, CSS cleanup, and UI bug fixes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Selected Projects</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- TrackTheTrap.com -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gray-100 overflow-hidden">
+                        <img src="assets/trap.png" alt="TrackTheTrap.com Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">TrackTheTrap.com</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Chrome extension that tracks and controls YouTube usage. Reveals the video and Shorts count YouTube hides from you. Set count-based limits, and YouTube gets blocked when you hit them. Built for myself and friends to gain real awareness and control.
+                        </p>
+                        <a href="https://trackthetrap.com" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+                            Visit Project
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pathfinding Visualizer -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gray-100 overflow-hidden">
+                        <img src="assets/pathfinding.png" alt="Pathfinding Visualizer Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Pathfinding Algorithm Visualizer</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Interactive tool visualizing BFS, DFS, Dijkstra, and A* algorithms. Features music to make learning fun. Built 4-5 years ago.
+                        </p>
+                        <a href="https://pathfindingalgorithmvisual.web.app/" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+                            Try the Demo
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sorting Visualizer -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gray-100 overflow-hidden">
+                        <img src="assets/sorting.png" alt="Sorting Visualizer Screenshot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Sorting Visualizer</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Visualizes Merge Sort, Quick Sort, Insertion Sort, Selection Sort, and Heap Sort with real-time animations. Built 4 years ago.
+                        </p>
+                        <a href="https://sortingvisualizer-00.web.app/" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
+                            Try the Demo
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Let's Connect</h2>
+            <p class="text-lg text-gray-600 mb-12">Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
+
+            <div class="flex justify-center gap-6 flex-wrap">
+                <!-- GitHub -->
+                <a href="https://github.com/Adesh-Pandey" target="_blank" class="flex items-center gap-3 px-6 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-all shadow-md hover:shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span class="font-medium">GitHub</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/adesh-pandey-45aa371bb/" target="_blank" class="flex items-center gap-3 px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all shadow-md hover:shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span class="font-medium">LinkedIn</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:adeshpandey333@gmail.com" class="flex items-center gap-3 px-6 py-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span class="font-medium">Email</span>
+                </a>
+
+                <!-- Twitter -->
+                <a href="https://x.com/AdeshPandey420" target="_blank" class="flex items-center gap-3 px-6 py-4 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-all shadow-md hover:shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                    <span class="font-medium">Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-gray-900 text-gray-400 text-center">
+        <p>&copy; 2025 Adesh Pandey. Built with passion and precision.</p>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
