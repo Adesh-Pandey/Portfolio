@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adesh Pandey - Software Engineer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full-time Software Engineer at Synthesis with expertise in React, TypeScript, Next.js, and full-stack development. Building high-performance software products from Nepal.">
+    <meta name="author" content="Adesh Pandey">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adesh-pandey.github.io/Portfolio/">
+    <meta property="og:title" content="Adesh Pandey - Software Engineer">
+    <meta property="og:description" content="Full-time Software Engineer at Synthesis with expertise in React, TypeScript, Next.js, and full-stack development.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://adesh-pandey.github.io/Portfolio/">
+    <meta property="twitter:title" content="Adesh Pandey - Software Engineer">
+    <meta property="twitter:description" content="Full-time Software Engineer at Synthesis with expertise in React, TypeScript, Next.js, and full-stack development.">
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -159,12 +176,30 @@
         .dark-mode ul li {
             color: #cbd5e1;
         }
+
+        .dark-mode a[download] {
+            background-color: #334155;
+            border-color: #475569;
+        }
+
+        .dark-mode a[download] svg {
+            color: #cbd5e1;
+        }
+
+        .dark-mode a[download]:hover svg {
+            color: #818cf8;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 transition-all">
 
-    <!-- Dark Mode Toggle -->
-    <div class="absolute top-6 right-6 z-50">
+    <!-- Top Right Controls -->
+    <div class="absolute top-6 right-6 z-50 flex gap-3">
+        <a href="resume.pdf" download class="p-3 rounded-full bg-gray-100 shadow-lg hover:shadow-xl transition-all border border-gray-300 group">
+            <svg class="w-6 h-6 text-gray-700 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+        </a>
         <button id="themeToggle" class="p-3 rounded-full bg-gray-100 shadow-lg hover:shadow-xl transition-all border border-gray-300">
             <svg id="sunIcon" class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>

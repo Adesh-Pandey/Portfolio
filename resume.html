@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adesh Pandey - Resume</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 20px;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: #fff;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 25px 0;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4f46e5;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            font-size: 15px;
+            color: #4f46e5;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-weight: 600;
+            color: #4f46e5;
+            font-size: 16px;
+        }
+
+        .date {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .location {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .summary {
+            color: #444;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .skills-section {
+            margin-top: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 10px;
+        }
+
+        .skill-category strong {
+            color: #1a1a1a;
+            font-size: 14px;
+        }
+
+        .skill-category span {
+            color: #444;
+            font-size: 14px;
+        }
+
+        .project-link, .reference-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+
+        .print-button:hover {
+            background: #4338ca;
+        }
+
+        .achievement-item {
+            margin-bottom: 6px;
+            color: #444;
+        }
+
+        .education-note {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">Print to PDF</button>
+
+    <h1>Adesh Pandey</h1>
+    <div class="subtitle">Full-time Software Engineer</div>
+
+    <div class="contact-info">
+        <div><strong>Location:</strong> Nepal</div>
+        <div><strong>Email:</strong> <a href="mailto:adeshpandey333@gmail.com">adeshpandey333@gmail.com</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/Adesh-Pandey">github.com/Adesh-Pandey</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adesh-pandey-45aa371bb/">linkedin.com/in/adesh-pandey-45aa371bb</a></div>
+        <div><strong>Portfolio:</strong> <a href="https://adesh-pandey.github.io/Portfolio/">adesh-pandey.github.io/Portfolio</a></div>
+    </div>
+
+    <hr>
+
+    <h2>Professional Summary</h2>
+    <p class="summary">
+        Full-time Software Engineer at Synthesis with nearly 2 years of experience building high-performance web applications and mobile platforms. Specialized in React, TypeScript, Next.js, and full-stack development. Currently pursuing Bachelor's in Electronics Engineering at Pulchowk Engineering Campus while maintaining full-time employment. Proven track record of delivering impactful features including authentication system migrations, iOS applications, and complex interactive learning components.
+    </p>
+
+    <h2>Experience</h2>
+
+    <div class="job-header">
+        <h3>Software Engineer - Full-time</h3>
+        <span class="date">April 2023 - Present</span>
+    </div>
+    <div class="company">Synthesis</div>
+    <div class="location">US-based edtech startup</div>
+
+    <h4>Authentication System Migration</h4>
+    <ul>
+        <li>Migrated authentication from server-side to client-side architecture, improving page load latency by 10x</li>
+        <li>Significantly enhanced user experience across the entire application</li>
+    </ul>
+
+    <h4>iOS Application Development</h4>
+    <ul>
+        <li>Led development of Synthesis iPad app using Swift and WebView architecture</li>
+        <li>Achieved 50-60% user adoption, becoming the preferred platform for majority of users</li>
+        <li>Responsible for ongoing maintenance and feature development</li>
+        <li><a href="https://apps.apple.com/np/app/synthesis-math-tutor/id6448335635" class="project-link">View on App Store</a></li>
+    </ul>
+
+    <h4>Interactive Learning Components</h4>
+    <ul>
+        <li>Developed dozens of complex interactive learning tools and educational games using React, Redux, and HTML within Next.js</li>
+        <li>Performance-focused React-based games with cross-platform compatibility and optimized state management</li>
+    </ul>
+
+    <h4>Full-Stack Platform Infrastructure</h4>
+    <ul>
+        <li>Own all Account and Billing systems with Stripe and Apple payment integrations</li>
+        <li>Built complete backend-to-frontend infrastructure for referral and affiliate programs</li>
+        <li>Implemented A/B testing system for purchase modal experiments to optimize conversion</li>
+        <li>Handle Android tablet support for both institutional and consumer user base</li>
+    </ul>
+
+    <h4>Initial Freelance Project</h4>
+    <ul>
+        <li>Delivered 2-week freelance project building real-time interactive application with Framer Motion, React TypeScript, WebSockets, and Express</li>
+        <li>Transitioned to full-time role based on execution quality, delivery speed, and effective communication</li>
+    </ul>
+
+    <h2>Education</h2>
+
+    <div class="job-header">
+        <h3>Bachelor's in Electronics Engineering</h3>
+        <span class="date">Currently in 3rd Year, 6th Semester</span>
+    </div>
+    <div class="company">Pulchowk Engineering Campus</div>
+    <div class="location">Tribhuvan University, Nepal</div>
+    <div class="education-note">Concurrent with full-time software engineering work</div>
+
+    <h2>Open Source Contributions</h2>
+
+    <h3>Framer Motion</h3>
+    <p>Identified and resolved critical type definitions issues following the Motion v2 package split. Submitted pull request that was merged and approved by project maintainer Matt Perry.</p>
+    <a href="https://x.com/mattgperry/status/1879103131889623170" class="reference-link">View Matt Perry's Response →</a>
+
+    <h3 style="margin-top: 15px;">Matrix SDK (React Based)</h3>
+    <p>Contributed UI bug fixes and styling improvements to the React-based Matrix SDK.</p>
+
+    <h2>Selected Projects</h2>
+
+    <h3>TrackTheTrap.com</h3>
+    <p>Chrome extension for monitoring and managing YouTube usage. Provides visibility into video and Shorts consumption metrics with configurable count-based limits and automatic blocking functionality.</p>
+    <a href="https://trackthetrap.com" class="project-link">Visit Project →</a>
+
+    <h3 style="margin-top: 15px;">Pathfinding Algorithm Visualizer</h3>
+    <p>Interactive visualization tool for pathfinding algorithms including BFS, DFS, and Dijkstra. Educational project demonstrating algorithm behavior with real-time visual feedback.</p>
+    <a href="https://pathfindingalgorithmvisual.web.app/" class="project-link">Try the Demo →</a>
+
+    <h3 style="margin-top: 15px;">Sorting Visualizer</h3>
+    <p>Interactive visualization of common sorting algorithms including Merge Sort, Quick Sort, Insertion Sort, Selection Sort, and Heap Sort with real-time animations.</p>
+    <a href="https://sortingvisualizer-00.web.app/" class="project-link">Try the Demo →</a>
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills-section">
+        <div class="skill-category">
+            <strong>Primary Stack:</strong> <span>Next.js, React, TypeScript, Redux, Tailwind CSS, tRPC, Framer Motion</span>
+        </div>
+        <div class="skill-category">
+            <strong>Backend & Tools:</strong> <span>Express, Node.js, WebSockets</span>
+        </div>
+        <div class="skill-category">
+            <strong>Mobile & Payments:</strong> <span>Swift, Stripe, Apple IAP</span>
+        </div>
+        <div class="skill-category">
+            <strong>Third-Party Integrations:</strong> <span>Statsig, Fullstory, Axiom, Segment</span>
+        </div>
+        <div class="skill-category">
+            <strong>Deployment:</strong> <span>Vercel</span>
+        </div>
+    </div>
+
+    <h2>Key Achievements</h2>
+    <ul>
+        <li class="achievement-item">Improved authentication system performance by 10x through architectural migration</li>
+        <li class="achievement-item">Built iOS application adopted by 50-60% of active users</li>
+        <li class="achievement-item">Developed dozens of production-ready interactive learning components</li>
+        <li class="achievement-item">Successfully transitioned from freelance to full-time position within 2 weeks</li>
+        <li class="achievement-item">Maintained full-time engineering role while pursuing engineering degree</li>
+        <li class="achievement-item">Contributed to major open source projects (Framer Motion, Matrix SDK)</li>
+    </ul>
+</body>
+</html>
