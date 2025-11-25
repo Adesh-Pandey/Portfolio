@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adesh Pandey - Software Engineer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>👤</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +122,7 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
         }
 
-        .dark-mode a.text-indigo-600 {
+        .dark-mode .text-indigo-600 {
             color: #818cf8 !important;
         }
 
@@ -135,6 +136,24 @@
 
         .dark-mode span.text-gray-100 {
             color: #f1f5f9;
+        }
+
+        .dark-mode a.bg-gray-900 {
+            background-color: #6366f1;
+        }
+
+        .dark-mode a.bg-gray-900:hover {
+            background-color: #4f46e5;
+        }
+
+        .dark-mode a.border-gray-900 {
+            border-color: #6366f1;
+            color: #e2e8f0;
+        }
+
+        .dark-mode a.border-gray-900:hover {
+            background-color: #6366f1;
+            color: white;
         }
     </style>
 </head>
@@ -241,7 +260,7 @@
                         <div class="bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg border-l-4 border-green-600">
                             <h4 class="font-semibold text-gray-900 mb-3 text-lg">Initial Freelance Project</h4>
                             <p class="text-gray-700 leading-relaxed">
-                                Started as a 2-week freelance engagement building a real-time interactive application with Framer Motion, React TypeScript, WebSockets, Express, and Digital Ocean. Transitioned to full-time role based on delivery and technical execution.
+                                Started as a 2-week freelance engagement building a real-time interactive application with Framer Motion, React TypeScript, WebSockets, and Express. Transitioned to full-time role based on delivery and technical execution.
                             </p>
                         </div>
 
@@ -278,10 +297,18 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="text-sm font-medium text-gray-600 mb-2">Hosting & DevOps</p>
+                                    <p class="text-sm font-medium text-gray-600 mb-2">Third-Party Integrations</p>
                                     <div class="flex flex-wrap gap-2">
-                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium whitespace-nowrap">Digital Ocean</span>
-                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium whitespace-nowrap">Vercel</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium">Statsig</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium">Fullstory</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium">Axiom</span>
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium">Segment</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-gray-600 mb-2">Deployment</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-100 rounded-full text-sm font-medium">Vercel</span>
                                     </div>
                                 </div>
                             </div>
@@ -357,7 +384,7 @@
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold text-gray-900 mb-3">Pathfinding Algorithm Visualizer</h3>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            Interactive visualization tool for pathfinding algorithms including BFS, DFS, Dijkstra, and A*. Educational project demonstrating algorithm behavior with real-time visual feedback.
+                            Interactive visualization tool for pathfinding algorithms including BFS, DFS, and Dijkstra. Educational project demonstrating algorithm behavior with real-time visual feedback.
                         </p>
                         <a href="https://pathfindingalgorithmvisual.web.app/" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
                             Try the Demo
@@ -387,6 +414,20 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Education</h2>
+
+            <div class="border-l-4 border-indigo-600 pl-6">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">Bachelor's in Electronics Engineering</h3>
+                <p class="text-lg text-indigo-600 font-medium mb-1">Pulchowk Engineering Campus</p>
+                <p class="text-gray-600 mb-2">Tribhuvan University, Nepal</p>
+                <p class="text-gray-600">Currently in 3rd Year, 6th Semester</p>
             </div>
         </div>
     </section>
@@ -445,8 +486,11 @@
         const moonIcon = document.getElementById('moonIcon');
         const body = document.body;
 
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
         if (currentTheme === 'dark') {
             body.classList.add('dark-mode');
             sunIcon.classList.add('hidden');
