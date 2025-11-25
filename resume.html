@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adesh Pandey - Resume</title>
+    <title></title>
     <style>
         @media print {
             body {
                 margin: 0;
-                padding: 20px;
+                padding: 15px 20px;
             }
             .no-print {
                 display: none;
             }
+            @page {
+                margin: 12mm 15mm;
+                size: A4;
+            }
+
+            /* Remove Chrome's default header/footer */
+            @page :first {
+                margin-top: 12mm;
+            }
+        }
+
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
         * {
@@ -23,32 +37,32 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.4;
             color: #333;
             max-width: 850px;
             margin: 0 auto;
-            padding: 40px 60px;
+            padding: 25px 50px;
             background: #fff;
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 32px;
             color: #1a1a1a;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
 
         .subtitle {
-            font-size: 18px;
+            font-size: 16px;
             color: #666;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-weight: 500;
         }
 
         .contact-info {
-            font-size: 14px;
+            font-size: 13px;
             color: #555;
-            margin-bottom: 10px;
-            line-height: 1.8;
+            margin-bottom: 8px;
+            line-height: 1.6;
         }
 
         .contact-info a {
@@ -59,30 +73,30 @@
         hr {
             border: none;
             border-top: 2px solid #e5e7eb;
-            margin: 25px 0;
+            margin: 15px 0;
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 20px;
             color: #1a1a1a;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
             border-bottom: 2px solid #4f46e5;
         }
 
         h3 {
-            font-size: 18px;
+            font-size: 16px;
             color: #1a1a1a;
-            margin-top: 20px;
-            margin-bottom: 5px;
+            margin-top: 12px;
+            margin-bottom: 3px;
         }
 
         h4 {
-            font-size: 15px;
+            font-size: 14px;
             color: #4f46e5;
-            margin-top: 15px;
-            margin-bottom: 8px;
+            margin-top: 10px;
+            margin-bottom: 5px;
             font-weight: 600;
         }
 
@@ -90,64 +104,66 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
 
         .company {
             font-weight: 600;
             color: #4f46e5;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .date {
             color: #666;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .location {
             color: #666;
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-size: 13px;
+            margin-bottom: 6px;
         }
 
         ul {
             margin-left: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             color: #444;
+            font-size: 14px;
         }
 
         .summary {
             color: #444;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             text-align: justify;
+            font-size: 14px;
         }
 
         .skills-section {
-            margin-top: 15px;
+            margin-top: 8px;
         }
 
         .skill-category {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .skill-category strong {
             color: #1a1a1a;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .skill-category span {
             color: #444;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .project-link, .reference-link {
             color: #4f46e5;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .print-button {
@@ -171,15 +187,21 @@
         }
 
         .achievement-item {
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             color: #444;
+            font-size: 14px;
         }
 
         .education-note {
             font-style: italic;
             color: #666;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        p {
             font-size: 14px;
-            margin-top: 5px;
+            margin-bottom: 6px;
         }
     </style>
 </head>
@@ -190,7 +212,7 @@
     <div class="subtitle">Full-time Software Engineer</div>
 
     <div class="contact-info">
-        <div><strong>Location:</strong> Nepal</div>
+        <div><strong>Location:</strong> Kathmandu, Nepal</div>
         <div><strong>Email:</strong> <a href="mailto:adeshpandey333@gmail.com">adeshpandey333@gmail.com</a></div>
         <div><strong>GitHub:</strong> <a href="https://github.com/Adesh-Pandey">github.com/Adesh-Pandey</a></div>
         <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adesh-pandey-45aa371bb/">linkedin.com/in/adesh-pandey-45aa371bb</a></div>

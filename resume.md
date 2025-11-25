@@ -1,7 +1,7 @@
 # Adesh Pandey
 **Full-time Software Engineer**
 
-**Location:** Nepal
+**Location:** Kathmandu, Nepal
 **Email:** adeshpandey333@gmail.com
 **GitHub:** github.com/Adesh-Pandey
 **LinkedIn:** linkedin.com/in/adesh-pandey-45aa371bb
