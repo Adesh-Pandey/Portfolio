@@ -65,7 +65,7 @@ Currently in 3rd Year, 6th Semester
 ## Open Source Contributions
 
 ### Framer Motion
-Identified and resolved critical type definitions issues following the Motion v2 package split. Submitted pull request that was merged and approved by project maintainer Matt Perry.
+Fixed missing type definitions that broke in newer versions after the Motion v11 package split. Submitted pull request that was merged and approved by project maintainer Matt Perry.
 
 **Reference:** x.com/mattgperry/status/1879103131889623170
 
